@@ -1,12 +1,14 @@
-export class Controller {
+import 'reflect-metadata';
+import { ExampleService } from './service';
+import { Service, Container } from 'typedi';
+
+@Service()
+export class ExampleContainer {
   constructor(){}
   
-  sum(req, res) {
-    res.send("hellooooo");
-  }
-
-  static of() {
-    const controller = new Controller();
-    return controller;
+  flow(req, res) {
+    const serviceInstance = Container.get(ExampleService); 
+    const result = serviceInstance.hello();
+    res.send(result);
   }
 }
