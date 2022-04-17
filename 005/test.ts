@@ -1,13 +1,15 @@
-import { Controller } from "./controller";
-import * as request from 'supertest';
+import { ExampleController } from "./controller";
+import request from "supertest";
+import app from './app';
 
 describe("005 sample test", function () {
-  let controller: Controller;
+  let controller: ExampleController;
+  
   beforeAll(() =>{
-    controller = new Controller();
+    controller = new ExampleController();
   })
   
-  it('asdf', () => {
-    
+  it('요청의 결과 200이 리턴된다.', () => {
+    request(app).get('/').expect(200);
   })
 })

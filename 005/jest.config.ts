@@ -5,5 +5,5 @@ export default {
 		'ts-jest': {
 			tsconfig: 'tsconfig.json',
 		},
-	},
+	}
 }

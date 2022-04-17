@@ -1,9 +1,14 @@
 import { Container } from "typedi";
-import express from "express"; 
-import { ExampleContainer } from "./controller";
+import express from "express";
+import { ExampleController } from "./controller";
+import { wrapAsync } from './middleware/asyncWrap'
 
 const app = express();
 
-app.get('/health', Container.get(ExampleContainer).flow);
+app.get('/', wrapAsync(async (req, res) => {
+    const exampleController = Container.get(ExampleController);
+    const authInfo = exampleController.getAuthInfo(req.query);
+    return res.send(authInfo);
+}));
 
-app.listen(3456,()=>{console.log('server on')});
+export default app;
