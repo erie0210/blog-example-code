@@ -5,16 +5,14 @@ const complexString = "🤦‍♀️🤦🎅";
 
 const graphemes = splitter.splitGraphemes(complexString);
 const graphemeCounts = splitter.countGraphemes(complexString);
-console.log("graphemes: ", graphemes);
-console.log("graphemeCounts: ", graphemeCounts);
+console.log("graphemes: ", graphemes); // graphemes:  [ '🤦‍♀️', '🤦', '🎅' ]
+console.log("graphemeCounts: ", graphemeCounts); // graphemeCounts:  3
 
 const result = "🤦‍♀️";
 
-console.log("result: ", result); // 🤦🤦‍♀️
-console.log("result.length: ", result.length); //5
-
-console.log(result.codePointAt());
+console.log("result: ", result); // result:  🤦‍♀️
+console.log("result.length: ", result.length); // result.length:  5 (utf16)
 
 
 // SQL
-// SELECT LENGTH("🤦‍♀️";) # 13
+// SELECT LENGTH("🤦‍♀️";) // utf8 이기 때문에 13이 나온다.
