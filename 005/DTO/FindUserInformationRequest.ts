@@ -1,10 +1,10 @@
-import { IsNumber, IsPhoneNumber, IsString } from "class-validator"
+import { IsNumber, IsString } from "class-validator"
 
 export class FindUserInformationRequest{
     @IsString()
     name: string;
 
-    @IsPhoneNumber()
+    @IsNumber()
     phone: number;
 
     constructor(){}

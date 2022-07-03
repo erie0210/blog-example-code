@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./index.ts",
-    "test": "jest"
+    "start": "nodemon --watch '*.ts' --exec ts-node ./index.ts",
+    "test": "jest",
+    "stryker": "npx stryker run"
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +29,9 @@
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "babel-jest": "^27.5.1"
+    "@stryker-mutator/core": "^6.0.2",
+    "@stryker-mutator/jest-runner": "^6.0.2",
+    "babel-jest": "^27.5.1",
+    "nodemon": "^2.0.16"
   }
 }

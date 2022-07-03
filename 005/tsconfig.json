@@ -10,6 +10,5 @@
           "baseUrl": ".",
           "rootDir": ".", 
       "types": ["jest", "node"]
-    },
-    "include": ["./*.ts"],
+    }
   }

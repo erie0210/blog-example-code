@@ -11,8 +11,10 @@ export class ExampleController {
   constructor(){}
 
   getAuthInfo(query: FindUserInformationRequest): FindUserInformationResponse {
+    console.log("controller query", query)
       const serviceInstance = Container.get(ExampleService); 
       const authInfo: AuthInfo = serviceInstance.getAuthInfo(query);
-      return  new FindUserInformationResponse(authInfo);
+      const res =  new FindUserInformationResponse(authInfo);
+      return res;
   }
 }

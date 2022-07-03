@@ -5,10 +5,11 @@ import { wrapAsync } from './middleware/asyncWrap'
 
 const app = express();
 
-app.get('/', wrapAsync(async (req, res) => {
+app.get('/', (req, res) => {
     const exampleController = Container.get(ExampleController);
     const authInfo = exampleController.getAuthInfo(req.query);
+    console.log("req.query", req.query)
     return res.send(authInfo);
-}));
+});
 
 export default app;
