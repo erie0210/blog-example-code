@@ -1,0 +1,394 @@
+00:48:15 (29654) DEBUG ConfigReader Loading config from stryker.conf.mjs
+00:48:15 (29654) DEBUG ConfigReader Loaded config: {
+  "_comment": "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information",
+  "packageManager": "npm",
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest",
+  "jest": {
+    "projectType": "custom",
+    "configFile": "./jest.config.js",
+    "config": {
+      "testEnvironment": "jest-environment-jsdom-sixteen"
+    },
+    "enableFindRelatedTests": true
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "maxTestRunnerReuse": 0,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "mutate": [
+    "{src,lib}/**/!(*.+(s|S)pec|*.+(t|T)est).+(cjs|mjs|js|ts|jsx|tsx|html|vue)",
+    "!{src,lib}/**/__tests__/**/*.+(cjs|mjs|js|ts|jsx|tsx|html|vue)"
+  ],
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "appendPlugins": [],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": "{test,src,lib}/**/*.{js,ts,jsx,tsx,html,vue}",
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false
+}
+00:48:15 (29654) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator
+00:48:15 (29654) DEBUG PluginLoader Loading plugin "@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+00:48:15 (29654) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:15 (29654) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:15 (29654) DEBUG MetaSchemaBuilder Contributing 1 schemas from plugins to options validation.
+00:48:15 (29654) WARN InputFileResolver No files marked to be mutated, Stryker will perform a dry-run without actually mutating anything. You can configure the `mutate` property in your config file (or use `--mutate` via command line).
+00:48:15 (29654) DEBUG InputFileResolver All input files: [
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.eslintrc.js",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.gitignore",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/DTO/FindUserInformationRequest.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/DTO/FindUserInformationResponse.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/README.md",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/app.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/babel.config.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/controller.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/db.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/entity/AuthInfo.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/index.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/jest.config.js",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/jest.config.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/middleware/asyncWrap.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/package-lock.json",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/package.json",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/service.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/simpleTest.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/stryker.conf.mjs",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/test.ts",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/tsconfig.json",
+  "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/yarn.lock"
+]
+00:48:15 (29654) DEBUG InputFileResolver Files to mutate: []
+00:48:15 (29654) DEBUG TemporaryDirectory Using temp directory "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp"
+00:48:15 (29654) DEBUG Instrumenter Instrumenting 0 source files with mutants
+00:48:15 (29654) INFO Instrumenter Instrumented 0 source file(s) with 0 mutant(s)
+00:48:15 (29654) DEBUG TSConfigPreprocessor Rewriting file File {
+  name: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/tsconfig.json',
+  _content: <Buffer 7b 0a 20 20 22 63 6f 6d 70 69 6c 65 72 4f 70 74 69 6f 6e 73 22 3a 20 7b 0a 20 20 20 20 22 65 78 70 65 72 69 6d 65 6e 74 61 6c 44 65 63 6f 72 61 74 6f ... 286 more bytes>
+}
+00:48:15 (29654) INFO ConcurrencyTokenProvider Creating 9 test runner process(es).
+00:48:15 (29654) DEBUG ChildProcessProxy Started CheckerWorker in child process 29678
+00:48:16 (29678) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:16 (29678) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:16 (29654) DEBUG Sandbox Creating a sandbox for files in /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:16 (29654) DEBUG Sandbox Start symlink node_modules
+00:48:16 (29654) DEBUG Sandbox Create symlink from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/node_modules
+00:48:16 (29654) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
+00:48:16 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29680
+00:48:16 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29681
+00:48:17 (29681) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:17 (29681) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:17 (29680) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:17 (29680) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:17 (29680) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:17 (29681) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:17 (29680) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:17 (29681) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:17 (29681) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:17 (29680) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:17 (29680) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:17 (29680) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:17 (29680) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:17 (29681) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:17 (29681) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:17 (29681) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:17 (29654) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+00:48:17 (29654) DEBUG DryRunExecutor Using timeout of 300000 ms.
+00:48:17 (29654) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+00:48:17 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29699
+00:48:17 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29701
+00:48:17 (29681) TRACE JestTestRunner Invoking Jest with config {"fileNamesUnderTest":[],"jestConfig":{"preset":"ts-jest","testEnvironment":"/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/jest-runner/dist/src/jest-plugins/cjs/jest-environment-generic.js","globals":{"ts-jest":{"tsconfig":"tsconfig.json"},"__strykerGlobalNamespace__":"__stryker__"},"rootDir":"/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499","collectCoverage":false,"verbose":false,"notify":false,"bail":false,"reporters":[]},"testLocationInResults":true}
+00:48:17 (29699) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:17 (29699) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:17 (29701) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:17 (29701) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:18 (29699) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:18 (29699) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:18 (29701) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:18 (29699) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:18 (29699) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:18 (29699) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:18 (29699) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:18 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29714
+00:48:18 (29701) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:18 (29701) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:18 (29701) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:18 (29701) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:18 (29701) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:18 (29654) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in child process 29715
+00:48:18 (29654) ERROR DryRunExecutor One or more tests resulted in an error:
+	undefinedglobal is not defined ReferenceError: global is not defined
+    at Object.<anonymous> (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/graceful-fs/graceful-fs.js:92:1)
+    at Runtime._execModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1009:12)
+    at Runtime.requireInternalModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1049:17)
+    at /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:2019:30
+    at Object.<anonymous> (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-message-util/build/index.js:22:34)
+    at Runtime._execModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1009:12)
+    at Runtime.requireInternalModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1049:17)
+    at /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:2019:30
+    at Object.<anonymous> (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/expect/build/toThrowMatchers.js:10:24)
+    at Runtime._execModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1009:12)
+    at Runtime.requireInternalModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1049:17)
+    at /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:2019:30
+    at Object.<anonymous> (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/expect/build/index.js:35:48)
+    at Runtime._execModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1009:12)
+    at Runtime.requireInternalModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1049:17)
+    at /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:2019:30
+    at Object.<anonymous> (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:12:15)
+    at Runtime._execModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1009:12)
+    at Runtime.requireInternalModule (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runtime/build/index.js:1049:17)
+    at jestAdapter (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:22:13)
+    at runTestInternal (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runner/build/runTest.js:389:22)
+    at runTest (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@jest/core/build/cli/index.js:320:7)
+    at Object.runCLI (/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@jest/core/build/cli/index.js:173:3)
+    at JestGreaterThan25TestAdapter.run (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/jest-runner/src/jest-test-adapters/jest-greater-than-25-adapter.ts:9:20)
+    at JestTestRunner.run (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/jest-runner/src/jest-test-runner.ts:172:25)
+    at JestTestRunner.dryRun (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/jest-runner/src/jest-test-runner.ts:99:42)
+    at ChildProcessTestRunnerWorker.dryRun (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/src/test-runner/child-process-test-runner-worker.ts:42:26)
+    at ChildProcessProxyWorker.handleCall (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/src/child-proxy/child-process-proxy-worker.ts:94:22)
+00:48:18 (29654) DEBUG Stryker Not removing the temp dir because an error occurred
+00:48:18 (29654) ERROR Stryker Unexpected error occurred while running Stryker Error: Something went wrong in the initial test run
+    at DryRunExecutor.validateResultCompleted (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/process/3-dry-run-executor.js:61:15)
+    at DryRunExecutor.timeDryRun (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/process/3-dry-run-executor.js:77:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async WorkItem.execute (file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/concurrent/pool.js:30:28)
+    at async file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/concurrent/pool.js:67:13
+00:48:18 (29654) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+00:48:18 (29654) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
+00:48:18 (29654) DEBUG ChildProcessProxy Disposing of worker process 29680
+00:48:18 (29654) DEBUG ChildProcessProxy Disposing of worker process 29699
+00:48:18 (29654) DEBUG ChildProcessProxy Disposing of worker process 29701
+00:48:18 (29654) DEBUG ChildProcessProxy Kill 29680
+00:48:18 (29654) DEBUG ChildProcessProxy Kill 29699
+00:48:18 (29654) DEBUG ChildProcessProxy Disposing of worker process 29681
+00:48:18 (29654) DEBUG ChildProcessProxy Kill 29701
+00:48:18 (29654) DEBUG ChildProcessProxy Kill 29681
+00:48:18 (29714) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:18 (29714) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:18 (29714) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:18 (29715) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+00:48:18 (29715) DEBUG PluginLoader Loading plugin file:///Users/jay_inflab/Desktop/erie0210/blog-example-code/005/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+00:48:18 (29714) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:18 (29714) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:18 (29714) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:18 (29714) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:18 (29714) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:18 (29654) DEBUG ChildProcessProxy Disposing of worker process 29714
+00:48:18 (29654) DEBUG ChildProcessProxy Kill 29714
+00:48:19 (29715) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499
+00:48:19 (29715) DEBUG jestTestAdapterFactory Detected Jest version 27.5.1
+00:48:19 (29715) DEBUG CustomJestConfigLoader Read Jest config from /Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499/jest.config.js
+00:48:19 (29715) DEBUG CustomJestConfigLoader Final jest config: {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  globals: [Object],
+  rootDir: '/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499'
+}
+00:48:19 (29715) DEBUG JestTestRunner Merging file-based config {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  },
+  "rootDir": "/Users/jay_inflab/Desktop/erie0210/blog-example-code/005/.stryker-tmp/sandbox8121499"
+}
+      with custom config {
+  "testEnvironment": "jest-environment-jsdom-sixteen"
+}
+      and default (internal) stryker config {
+  "collectCoverage": false,
+  "verbose": false,
+  "notify": false,
+  "bail": false,
+  "reporters": []
+}
+00:48:19 (29715) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+00:48:19 (29654) DEBUG ChildProcessProxy Disposing of worker process 29715
+00:48:19 (29654) DEBUG ChildProcessProxy Kill 29715
+00:48:19 (29654) DEBUG ChildProcessProxy Disposing of worker process 29678
+00:48:19 (29654) DEBUG ChildProcessProxy Kill 29678
